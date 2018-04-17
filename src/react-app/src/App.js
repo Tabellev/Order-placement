@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './truck.jpg';
 import './App.css';
-import OrderForm from "./components/OrderForm";
+import Orders from "./components/Orders";
 
 class App extends Component {
   render() {
@@ -13,8 +13,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Flyttebyrå</h1>
         </header>
-          <h2>Legg inn ny ordre</h2>
-        <OrderForm/>
+        <Orders/>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {FormGroup, FormControl, ControlLabel, Grid, Row, Col} from 'react-bootstrap';
+import {Form, FormGroup, FormControl, ControlLabel, Grid, Row, Col} from 'react-bootstrap';
 
 class OrderType extends Component {
 
@@ -21,14 +21,17 @@ class OrderType extends Component {
             <div>
                 <Grid>
                     <Row className="show-grid">
-                        <Col xs={4} md={2}>
-                            <FormGroup controlId="formControlsSelect">
-                                <ControlLabel>Select</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="select">Flytting</option>
-                                    <option value="other">...</option>
-                                </FormControl>
-                            </FormGroup>
+                        <Col md={8}>
+                            <Form className="col-sm-12 offset-sm-4">
+                                <FormGroup controlId="formControlsSelect">
+                                    <ControlLabel>Select</ControlLabel>
+                                    <FormControl componentClass="select" placeholder="select">
+                                        <option value="moving">Flytting</option>
+                                        <option value="packing">Pakking</option>
+                                        <option value="cleaning">Vasking</option>
+                                    </FormControl>
+                                </FormGroup>
+                            </Form>
                         </Col>
                     </Row>
                 </Grid>

@@ -14,6 +14,7 @@ const orders = (state = initialState, action) => {
         case FETCH_ORDER_STARTED:
             return state;
         case FETCH_ORDER_FULFILLED:
+            console.log("Fulfilled");
             return {...state, fetchError: false, order: action.payload.jsonResponse};
         case FETCH_ORDER_FAILED:
             console.log("Failed");

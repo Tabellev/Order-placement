@@ -3,9 +3,11 @@ package isabel.vetli.tekniskintervju.controller.customer;
 import isabel.vetli.tekniskintervju.model.customer.Customer;
 import isabel.vetli.tekniskintervju.service.CusomerService;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Component

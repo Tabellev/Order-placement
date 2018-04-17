@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "fetch-polyfill": "^0.8.2",
     "promise-polyfill": "^7.1.2",
     "react": "^16.3.1",
     "react-bootstrap": "^0.32.1",
+    "react-date-picker": "^6.10.1",
     "react-dom": "^16.3.1",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
@@ -20,5 +20,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "proxy": "http://169.254.0.78:8080/rest"
 }
